@@ -1,0 +1,54 @@
+# ── أسرار النشر ────────────────────────────────────────────
+# يحتوي host و user و password بنص صريح
+deploy/ftp.json
+deploy/_stage/
+*.ftp.json
+.env
+.env.*
+
+# ── قاعدة البيانات الحيّة ──────────────────────────────────
+# تحتوي: هاش كلمة مرور المطبخ، توكنات جلسات صالحة،
+# عنوان Power Automate Flow، أسماء غرف وملاحظات حقيقية
+api/data/*
+!api/data/.htaccess
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# ── مفاتيح توقيع أندرويد ───────────────────────────────────
+*.jks
+*.keystore
+keystore.properties
+android/local.properties
+
+# ── مخرجات البناء ──────────────────────────────────────────
+*.apk
+*.aab
+android/build/
+android/app/build/
+android/.gradle/
+android/.idea/
+android/captures/
+node_modules/
+package-lock.json
+
+# ── أدوات وكلاء ACP المحلية ────────────────────────────────
+.acp-sessions/
+.acp-images/
+.acp-verify
+.acp-fingerprint.json
+.acp-lessons.md
+acp
+acp.cmd
+
+# ── سجلات ومؤقتات ─────────────────────────────────────────
+*.log
+logs/
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
